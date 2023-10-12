@@ -1,0 +1,27 @@
+<ion-card (click)="goToDetails()">
+  <div class="ion-activatable">
+    <ion-ripple-effect></ion-ripple-effect>
+
+    <ion-card-content>
+      <ion-item class="inline">
+        <ion-thumbnail>
+          <ion-img
+            src="{{box.imageURL}}"
+            alt="{{box.imageURL}}"
+          ></ion-img>
+        </ion-thumbnail>
+        <ion-item-divider></ion-item-divider>
+        <ion-card-title>{{box.price}} kr.</ion-card-title>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-title class="ion-padding-start">{{box.title}}</ion-card-title>
+
+
+    <ion-item>
+      <ion-card-content>{{box.description}}</ion-card-content>
+      <ion-card-content>L:{{box.length}} H:{{box.height}} W:{{box.width}}</ion-card-content>
+      <ion-card-content class="inline">id: {{box.productID}}</ion-card-content>
+    </ion-item>
+  </div>
+</ion-card>

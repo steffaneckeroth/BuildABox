@@ -1,0 +1,35 @@
+<ion-menu id="menu" contentId="main-content" style="text-align: center">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        en fed title
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-item>
+      <ion-button data-testid="create-menu-button" (click)="goToCreateSite()" size="medium">Create</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button data-testid="products-menu-button" (click)="goToProductsSite()" size="medium">Products</ion-button>
+    </ion-item>
+  </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start" style="position: absolute">
+        <ion-menu-button data-testid="menu-button"></ion-menu-button>
+      </ion-buttons>
+      <ion-title style="text-align: center">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-router-outlet></ion-router-outlet></ion-content>
+  <ion-footer></ion-footer>
+</div>
+
+

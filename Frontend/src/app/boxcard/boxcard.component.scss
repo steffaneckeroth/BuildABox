@@ -1,0 +1,40 @@
+.results {
+  display: grid;
+  column-gap: 14px;
+  row-gap: 14px;
+  grid-template-columns: repeat(20, 20fr);
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .results {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  input[type="text"] {
+    width: 70%;
+  }
+}
+
+@media (max-width: 499px) {
+  .results {
+    grid-template-columns: 1fr;
+  }
+}
+
+ion-item {
+  --border-width: 0;
+  --inner-border-width: 0;
+}
+
+ion-item-divider {
+  visibility: hidden;
+}
+
+.inline {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
